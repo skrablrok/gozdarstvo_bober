@@ -29,7 +29,7 @@
   "url": "https://www.gozdarstvo-bober.si/",
   "telephone": "+38641685867",
   "faxNumber": "+38614274268",
-  "email": "info@bober-gozdarstvo.si",
+  "email": "vojvodaigor@yahoo.com",
   "foundingDate": "1991",
   "taxID": "17066719",
   "address": {
@@ -249,35 +249,14 @@ section{scroll-margin-top:80px}
 .contact{background:var(--spruce);color:var(--lichen)}
 .contact .sec-head h2{color:var(--paper)}
 .contact .sec-head p{color:rgba(236,238,228,.72)}
-.contact .cols{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,88px);align-items:start}
+.contact .lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(32px,6vw,88px)}
 .lines{list-style:none;padding:0;margin:0}
 .lines li{padding:20px 0;border-top:1px solid rgba(230,203,152,.16)}
 .lines small{display:block;font-size:13.5px;color:rgba(236,238,228,.6);margin-bottom:4px}
 .lines a,.lines span{font:800 clamp(28px,3vw,38px)/1.05 var(--display);color:var(--paper);text-decoration:none;letter-spacing:.01em;font-variant-numeric:tabular-nums}
 .lines a:hover{color:var(--sap)}
 .lines .sm{font-size:clamp(22px,2.2vw,28px)}
-form{background:var(--spruce-2);border-radius:var(--r-lg);padding:clamp(22px,3.5vw,40px);display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.f{display:grid;gap:7px}
-.f.full{grid-column:1/-1}
-label{font-size:14.5px;font-weight:600;color:var(--lichen)}
-label em{font-style:normal;font-weight:400;color:rgba(236,238,228,.55)}
-input,select,textarea{font:400 16px/1.4 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid transparent;border-radius:var(--r-sm);
-  padding:12px 14px;min-height:48px;width:100%;transition:border-color .2s}
-textarea{min-height:120px;resize:vertical}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--saw)}
-.f.bad input,.f.bad select,.f.bad textarea{border-color:#ff8a65}
-.err{font-size:13.5px;color:#ffb39a;min-height:0}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips label{font-weight:500;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;cursor:pointer;
-  background:rgba(230,203,152,.08);box-shadow:inset 0 0 0 1.5px rgba(230,203,152,.25);transition:background-color .2s,box-shadow .2s}
-.chips input{position:absolute;opacity:0;width:1px;height:1px;min-height:0}
-.chips label:has(input:checked){background:var(--sap);color:var(--spruce);box-shadow:none}
-.chips label:has(input:focus-visible){outline:3px solid var(--saw);outline-offset:2px}
-.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:4px}
-.form-foot p{margin:0;font-size:14px;color:rgba(236,238,228,.62);flex:1 1 220px}
-.status{grid-column:1/-1;font-size:15px;color:var(--sap);margin:0}
-@media (max-width:860px){.contact .cols{grid-template-columns:1fr}}
-@media (max-width:560px){form{grid-template-columns:1fr}}
+@media (max-width:860px){.contact .lines{grid-template-columns:1fr}}
 
 /* ---------- footer ---------- */
 footer{background:#0E1F14;color:rgba(236,238,228,.6);font-size:14px;padding:32px 0}
@@ -618,9 +597,9 @@ figure{margin:0}
             <text id="htext" x="66" y="62">21,0 m</text>
           </g>
           <!-- reach annotation -->
-          <path d="M163 515H520" stroke="rgba(230,203,152,.5)" stroke-width="1.5"/>
-          <path d="M163 508v14M520 508v14" stroke="rgba(230,203,152,.5)" stroke-width="1.5"/>
-          <text x="340" y="542" text-anchor="middle" fill="#E6CB98" font-size="14" font-weight="600">bočni doseg 21,5 m</text>
+          <path d="M163 515H483" stroke="rgba(230,203,152,.5)" stroke-width="1.5"/>
+          <path d="M163 508v14M483 508v14" stroke="rgba(230,203,152,.5)" stroke-width="1.5"/>
+          <text x="323" y="542" text-anchor="middle" fill="#E6CB98" font-size="14" font-weight="600">bočni doseg 16 m</text>
         </svg>
       </div>
       <div class="spec" data-rv>
@@ -629,7 +608,7 @@ figure{margin:0}
         <p class="model">Unimog 2450 z dvigalom Palfinger 16000</p>
         <dl>
           <dt><span class="cnt" data-to="21">21</span> m</dt><dd>delovna višina, dvig od 800 do 5500 kg</dd>
-          <dt><span class="cnt" data-to="21,5">21,5</span> m</dt><dd>bočni doseg dvigala</dd>
+          <dt><span class="cnt" data-to="16">16</span> m</dt><dd>bočni doseg dvigala</dd>
           <dt><span class="cnt" data-to="3">3</span> t</dt><dd>hidravlični vitel na sprednji strani vozila</dd>
           <dt><span class="cnt" data-to="2">2</span> t</dt><dd>dodatna nosilnost kesona</dd>
         </dl>
@@ -644,8 +623,8 @@ figure{margin:0}
         <figure class="gear-photo truck-photo"><img class="ph" src="img/kamion.jpg" data-fallback="https://www.gozdarstvo-bober.si/media/k2/items/cache/1c0ae2205709722b62e843abc0471a55_L.jpg" alt="Kamion Mercedes-Benz 1524 s kontejnerjem za odvoz vejevja in lesa" width="600" height="450" loading="lazy" decoding="async"></figure>
       </div>
       <div class="reach" data-rv aria-label="Primerjava dosega dvigal">
-        <div class="row"><span>Avtodvigalo</span><div class="bar"><i style="width:100%">21,5 m</i></div></div>
-        <div class="row"><span>Kamion</span><div class="bar b"><i style="width:65.1%">14 m</i></div></div>
+        <div class="row"><span>Avtodvigalo</span><div class="bar"><i style="width:100%">16 m</i></div></div>
+        <div class="row"><span>Kamion</span><div class="bar b"><i style="width:87.5%">14 m</i></div></div>
         <div class="cube"><b>18 m³</b><span>prostornina kontejnerja. Vejevje odpeljemo v eni vožnji tudi po večjem posegu.</span></div>
       </div>
     </div>
@@ -697,7 +676,7 @@ figure{margin:0}
           <div><dt>Naslov</dt><dd>Črna vas 170, 1000 Ljubljana</dd></div>
           <div><dt>Davčna številka</dt><dd>17066719</dd></div>
           <div><dt>Matična številka</dt><dd>5499135</dd></div>
-          <div><dt>IBAN</dt><dd>SI56 0201 0001 0384 107, NLB</dd></div>
+          <div><dt>IBAN</dt><dd>SI56 6100 0000 5298 681</dd></div>
         </dl>
       </div>
     </div>
@@ -709,51 +688,16 @@ figure{margin:0}
   <div class="wrap">
     <div class="sec-head">
       <h2 id="h-kontakt">Pokažite nam svoje drevo</h2>
-      <p>Pokličite ali pustite sporočilo. Dogovorimo se za ogled, ponudbo dobite brezplačno.</p>
+      <p>Pokličite ali nam pišite po e-pošti. Dogovorimo se za ogled, ponudbo dobite brezplačno.</p>
     </div>
     <div class="cols">
       <ul class="lines" data-rv>
         <li><small>Mobitel</small><a href="tel:+38641685867">041 68 58 67</a></li>
         <li><small>Telefon in faks</small><a href="tel:+38614274268">01 427 42 68</a></li>
-        <li><small>E-pošta</small><a class="sm" id="mail" href="#kontakt">info@bober-gozdarstvo.si</a></li>
+        <li><small>E-pošta</small><a class="sm" id="mail" href="#kontakt">vojvodaigor@yahoo.com</a></li>
         <li><small>Naslov</small><a class="sm" href="https://www.google.com/maps/search/?api=1&query=%C4%8Crna+vas+170%2C+1000+Ljubljana" target="_blank" rel="noopener">Črna vas 170, Ljubljana</a></li>
       </ul>
 
-      <form id="form" novalidate data-rv>
-        <div class="f">
-          <label for="ime">Ime in priimek</label>
-          <input id="ime" name="ime" autocomplete="name" required>
-          <span class="err" id="ime-e"></span>
-        </div>
-        <div class="f">
-          <label for="tel">Telefon</label>
-          <input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required>
-          <span class="err" id="tel-e"></span>
-        </div>
-        <div class="f full">
-          <label for="kraj">Kje je drevo <em>(kraj ali naslov)</em></label>
-          <input id="kraj" name="kraj" autocomplete="street-address">
-        </div>
-        <fieldset class="f full" style="border:0;padding:0;margin:0">
-          <legend style="font-size:14.5px;font-weight:600;margin-bottom:9px">Kaj potrebujete</legend>
-          <div class="chips">
-            <label><input type="checkbox" name="kaj" value="Obžagovanje">Obžagovanje</label>
-            <label><input type="checkbox" name="kaj" value="Podiranje">Podiranje</label>
-            <label><input type="checkbox" name="kaj" value="Sanacija">Sanacija</label>
-            <label><input type="checkbox" name="kaj" value="Živa meja / sadno drevje">Živa meja ali sadno drevje</label>
-            <label><input type="checkbox" name="kaj" value="Odvoz vejevja">Odvoz vejevja</label>
-          </div>
-        </fieldset>
-        <div class="f full">
-          <label for="opis">Opis <em>(vrsta, približna višina, kaj je v bližini)</em></label>
-          <textarea id="opis" name="opis"></textarea>
-        </div>
-        <div class="form-foot">
-          <button class="btn btn-saw" type="submit">Pošljite povpraševanje</button>
-          <p>Odgovorimo v enem delovnem dnevu. Podatke uporabimo le za dogovor o ogledu.</p>
-        </div>
-        <p class="status" id="status" role="status" aria-live="polite"></p>
-      </form>
     </div>
   </div>
 </section>
@@ -884,38 +828,8 @@ document.querySelectorAll("img[data-fallback]").forEach(im => {
   nav.addEventListener("click", e => { if (e.target.tagName === "A"){ nav.classList.remove("open"); btn.setAttribute("aria-expanded", false); } });
 
   /* ---- e-mail (assembled at runtime against scrapers) ---- */
-  const addr = ["info", "bober-gozdarstvo.si"].join("@");
+  const addr = ["vojvodaigor", "yahoo.com"].join("@");
   const mail = document.getElementById("mail"); mail.href = "mailto:" + addr;
-
-  /* ---- form: validate on blur, clear on input, send via mail client ---- */
-  const form = document.getElementById("form");
-  const rules = {
-    ime: v => v.trim().length > 1 || "Vpišite ime, da vemo, koga iščemo.",
-    tel: v => v.replace(/\D/g, "").length >= 8 || "Vpišite telefonsko številko, na kateri ste dosegljivi."
-  };
-  function check(id){
-    const inp = document.getElementById(id), r = rules[id](inp.value), wrap = inp.closest(".f"), e = document.getElementById(id + "-e");
-    const ok = r === true; wrap.classList.toggle("bad", !ok); e.textContent = ok ? "" : r;
-    inp.setAttribute("aria-invalid", !ok); if (!ok) inp.setAttribute("aria-describedby", id + "-e");
-    return ok;
-  }
-  Object.keys(rules).forEach(id => {
-    const inp = document.getElementById(id);
-    inp.addEventListener("blur", () => { if (inp.value) check(id); });
-    inp.addEventListener("input", () => { if (inp.closest(".f").classList.contains("bad")) check(id); });
-  });
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    const bad = Object.keys(rules).filter(id => !check(id));
-    if (bad.length){ document.getElementById(bad[0]).focus(); return; }
-    const f = new FormData(form);
-    const body = [
-      "Ime: " + f.get("ime"), "Telefon: " + f.get("tel"), "Lokacija: " + (f.get("kraj") || "-"),
-      "Storitev: " + (f.getAll("kaj").join(", ") || "-"), "", f.get("opis") || ""
-    ].join("\n");
-    location.href = "mailto:" + addr + "?subject=" + encodeURIComponent("Povpraševanje za ogled drevesa") + "&body=" + encodeURIComponent(body);
-    document.getElementById("status").textContent = "Odprli smo vaš e-poštni program s pripravljenim sporočilom. Če se ni odprl, nas pokličite na 041 68 58 67.";
-  });
 })();
 </script>
 <script>
@@ -936,7 +850,7 @@ document.querySelectorAll("img[data-fallback]").forEach(im => {
   }), {rootMargin: "0px 0px -12% 0px", threshold: .12});
   targets.forEach(t => io.observe(t));
 
-  /* --- numbers count up (21 → "21", 21,5 → "21,5") --- */
+  /* --- numbers count up (21 → "21", 2,5 → "2,5") --- */
   function count(el){
     const raw = el.dataset.to, to = parseFloat(raw.replace(",", ".")), dec = raw.includes(",") ? 1 : 0;
     if (reduce){ el.textContent = raw; return; }
