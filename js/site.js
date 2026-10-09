@@ -9,6 +9,12 @@
   const btn = document.querySelector(".menu-btn"), nav = document.getElementById("nav");
   btn.addEventListener("click", () => { const o = nav.classList.toggle("open"); btn.setAttribute("aria-expanded", o); });
   nav.addEventListener("click", e => { if (e.target.tagName === "A"){ nav.classList.remove("open"); btn.setAttribute("aria-expanded", false); } });
+  document.querySelectorAll(".sub-btn").forEach(b => b.addEventListener("click", () => {
+    const o = b.parentElement.classList.toggle("open"); b.setAttribute("aria-expanded", o);
+  }));
+  document.addEventListener("click", e => document.querySelectorAll(".has-sub.open").forEach(w => {
+    if (!w.contains(e.target)){ w.classList.remove("open"); w.querySelector(".sub-btn").setAttribute("aria-expanded", false); }
+  }));
 
   /* ---- e-mail (assembled at runtime against scrapers) ---- */
   const addr = ["vojvodaigor", "yahoo.com"].join("@");

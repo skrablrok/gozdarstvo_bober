@@ -35,8 +35,16 @@
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
     </button>
     <nav class="nav" id="nav" aria-label="Glavni meni">
-      <a href="../#storitve">Storitve</a>
-      <a href="../#oprema" class="on" aria-current="true">Oprema</a>
+      <div class="has-sub">
+        <a href="../#storitve">Storitve</a>
+        <button class="sub-btn" type="button" aria-expanded="false" aria-label="Odpri podstrani storitev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub"><li><a href="../strokovno-obzagovanje-obrezovanje-in-podiranje-drevja/">Obžagovanje in podiranje</a></li><li><a href="../sanacija-in-strokovno-svetovanje/">Sanacija in svetovanje</a></li></ul>
+      </div>
+      <div class="has-sub">
+        <a href="../#oprema" class="on">Oprema</a>
+        <button class="sub-btn" type="button" aria-expanded="false" aria-label="Odpri podstrani opreme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub"><li><a href="../avtodvigalo/" aria-current="page">Avtodvigalo</a></li><li><a href="../kamion-za-odvoz-vejevja-in-lesa/">Kamion za odvoz</a></li></ul>
+      </div>
       <a href="../#nasveti">Nasveti</a>
       <a href="../#podjetje">O podjetju</a>
       <a href="#kontakt">Kontakt</a>
